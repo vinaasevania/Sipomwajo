@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\PermohonanDana;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use JD\Cloudder\Facades\Cloudder;
 use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Str;
 
 class PermohonanDanaController extends Controller
 {
@@ -34,30 +36,44 @@ class PermohonanDanaController extends Controller
             'fc_ktp_ketua'   => 'required|mimes:pdf|max:500000',
             'fc_ktp_sekertaris'   => 'required|mimes:pdf|max:500000',
         ]);
+
+        $ormas_name = Str::snake(auth()->user()->nama_organisasi, '-');
+
         // fc burek
         $file = $request->file('fc_burek');
-        $fc_burek = time() . "_" . $file->getClientOriginalName();
-        $file->storeAs('public/bukuRekening', $fc_burek);
+        Cloudder::upload($file->getRealPath(), null, [
+            'folder' => 'permohonan-dana/'.$ormas_name.'/buku-rekening',
+        ]);
+        $fc_burek = Cloudder::show(Cloudder::getPublicId());
 
         // surat permohonan
         $file1 = $request->file('surat_permohonan');
-        $surat_permohonan = time() . "_" . $file1->getClientOriginalName();
-        $file1->storeAs('public/suratPermohonan', $surat_permohonan);
+        Cloudder::upload($file1->getRealPath(), null, [
+            'folder' => 'permohonan-dana/'.$ormas_name.'/surat-permohonan',
+        ]);
+        $surat_permohonan = Cloudder::resource(Cloudder::getPublicId());
+        $surat_permohonan = $surat_permohonan['url'];
 
         // proposal
         $file2 = $request->file('proposal');
-        $proposal = time() . "_" . $file2->getClientOriginalName();
-        $file2->storeAs('public/proposal', $proposal);
+        Cloudder::upload($file2->getRealPath(), null, [
+            'folder' => 'permohonan-dana/'.$ormas_name.'/proposal',
+        ]);
+        $proposal = Cloudder::show(Cloudder::getPublicId());
 
         // fc_ktp_ketua
         $file3 = $request->file('fc_ktp_ketua');
-        $fc_ktp_ketua = time() . "_" . $file3->getClientOriginalName();
-        $file3->storeAs('public/fc_ktp_ketua', $fc_ktp_ketua);
+        Cloudder::upload($file3->getRealPath(), null, [
+            'folder' => 'permohonan-dana/'.$ormas_name.'/fc-ktp-ketua',
+        ]);
+        $fc_ktp_ketua = Cloudder::show(Cloudder::getPublicId());
 
         // fc_ktp_sekertaris
         $file4 = $request->file('fc_ktp_sekertaris');
-        $fc_ktp_sekertaris = time() . "_" . $file4->getClientOriginalName();
-        $file4->storeAs('public/fc_ktp_sekertaris', $fc_ktp_sekertaris);
+        Cloudder::upload($file4->getRealPath(), null, [
+            'folder' => 'permohonan-dana/'.$ormas_name.'/fc-ktp-ketua',
+        ]);
+        $fc_ktp_sekertaris = Cloudder::show(Cloudder::getPublicId());
 
         $permohonanDana = new PermohonanDana([
             "status" => "Menunggu Verifikasi",

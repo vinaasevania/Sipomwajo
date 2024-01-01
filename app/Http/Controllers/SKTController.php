@@ -5,7 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\SKT;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+use JD\Cloudder\Facades\Cloudder;
 use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Str;
 
 class SKTController extends Controller
 {
@@ -88,46 +91,70 @@ class SKTController extends Controller
                 'akta_notaris'   => 'required|mimes:pdf|max:500000',
             ]);
 
+            $ormas_name = Str::snake(auth()->user()->nama_organisasi, '-');
+
             // logo
             $file1 = $request->file('logo_organisasi');
-            $logo_organisasi = time() . "_" . $file1->getClientOriginalName();
-            $file1->storeAs('public/logo_organisasi', $logo_organisasi);
+            Cloudder::upload($file1->getRealPath(), null, [
+                'folder' => "$ormas_name/logo_organisasi",
+            ]);
+            $logo_organisasi = Cloudder::show(Cloudder::getPublicId());
 
             // surat_pengantar
             $file2 = $request->file('surat_pengantar');
-            $surat_pengantar = time() . "_" . $file2->getClientOriginalName();
-            $file2->storeAs('public/surat_pengantar', $surat_pengantar);
+            Cloudder::upload($file2->getRealPath(), null, [
+                'folder' => $ormas_name.'/surat-pengantar',
+            ]);
+            $surat_pengantar = Cloudder::resource(Cloudder::getPublicId());
+            $surat_pengantar = $surat_pengantar['url'];
 
             // sk_kemenkum_ham
             $file3 = $request->file('sk_kemenkum_ham');
-            $sk_kemenkum_ham = time() . "_" . $file3->getClientOriginalName();
-            $file3->storeAs('public/sk_kemenkum_ham', $sk_kemenkum_ham);
+            Cloudder::upload($file3->getRealPath(), null, [
+                'folder' => $ormas_name.'/sk-kemenkumham',
+            ]);
+            $sk_kemenkum_ham = Cloudder::resource(Cloudder::getPublicId());
+            $sk_kemenkum_ham = $sk_kemenkum_ham['url'];
 
             // sk_pengurus
             $file4 = $request->file('sk_pengurus');
-            $sk_pengurus = time() . "_" . $file4->getClientOriginalName();
-            $file4->storeAs('public/sk_pengurus', $sk_pengurus);
+            Cloudder::upload($file4->getRealPath(), null, [
+                'folder' => $ormas_name.'/sk-pengurus',
+            ]);
+            $sk_pengurus = Cloudder::resource(Cloudder::getPublicId());
+            $sk_pengurus = $sk_pengurus['url'];
 
             // sk_domisili
             $file5 = $request->file('sk_domisili');
-            $sk_domisili = time() . "_" . $file5->getClientOriginalName();
-            $file5->storeAs('public/sk_domisili', $sk_domisili);
+            Cloudder::upload($file5->getRealPath(), null, [
+                'folder' => $ormas_name.'/sk-domisili',
+            ]);
+            $sk_domisili = Cloudder::resource(Cloudder::getPublicId());
+            $sk_domisili = $sk_domisili['url'];
 
             // surat_pernyataan
             $file6 = $request->file('surat_pernyataan');
-            $surat_pernyataan = time() . "_" . $file6->getClientOriginalName();
-            $file6->storeAs('public/surat_pernyataan', $surat_pernyataan);
+            Cloudder::upload($file6->getRealPath(), null, [
+                'folder' => $ormas_name.'/surat-pernyataan',
+            ]);
+            $surat_pernyataan = Cloudder::resource(Cloudder::getPublicId());
+            $surat_pernyataan = $surat_pernyataan['url'];
 
             // biodata_pengurus
             $file7 = $request->file('biodata_pengurus');
-            $biodata_pengurus = time() . "_" . $file7->getClientOriginalName();
-            $file7->storeAs('public/biodata_pengurus', $biodata_pengurus);
+            Cloudder::upload($file7->getRealPath(), null, [
+                'folder' => $ormas_name.'/biodata-pengurus',
+            ]);
+            $biodata_pengurus = Cloudder::resource(Cloudder::getPublicId());
+            $biodata_pengurus = $biodata_pengurus['url'];
 
             // akta_notaris
             $file8 = $request->file('akta_notaris');
-            $akta_notaris = time() . "_" . $file8->getClientOriginalName();
-            $file8->storeAs('public/akta_notaris', $akta_notaris);
-
+            Cloudder::upload($file8->getRealPath(), null, [
+                'folder' => $ormas_name.'/biodata-pengurus',
+            ]);
+            $akta_notaris = Cloudder::resource(Cloudder::getPublicId());
+            $akta_notaris = $akta_notaris['url'];
 
             $permohonanSkt = new SKT([
                 "status" => "Menunggu Verifikasi",
@@ -172,6 +199,7 @@ class SKTController extends Controller
             return redirect('/dashboard-ormas/status-skt');
         } catch (\Exception $e) {
             // Tampilkan pesan kesalahan jika ada
+            Log::error($e->getMessage());
             Alert::error('Error', 'Gagal menyimpan data. ' . $e->getMessage());
             return redirect()->back();
         }
