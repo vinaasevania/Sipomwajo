@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use JD\Cloudder\Facades\Cloudder;
 use RealRashid\SweetAlert\Facades\Alert;
+use Illuminate\Support\Str;
 
 class PelaporanKegiatanController extends Controller
 {
@@ -40,11 +41,14 @@ class PelaporanKegiatanController extends Controller
             'foto_kegiatan2' => 'required|image|mimes:jpeg,png,jpg|max:5000',
             'foto_kegiatan3' => 'nullable|image|mimes:jpeg,png,jpg|max:5000',
         ]);
+
+        $ormas_name = Str::snake(auth()->user()->nama_organisasi, '-');
+
         // surat permohonan
         $file1 = $request->file('laporan_kegiatan');
 
         Cloudder::upload($file1->getRealPath(), null, [
-            'folder' => 'laporan-kegiatan',
+            'folder' =>  'laporan-kegiatan/'.$ormas_name,
         ]);
 
         $laporan_kegiatan = Cloudder::resource(Cloudder::getPublicId());
@@ -53,14 +57,14 @@ class PelaporanKegiatanController extends Controller
         // foto_kegiatan1
         $file2 = $request->file('foto_kegiatan1');
         Cloudder::upload($file2->getRealPath(), null, [
-            'folder' => 'laporan-kegiatan',
+            'folder' => 'laporan-kegiatan/'.$ormas_name.'/foto',
         ]);
         $foto_kegiatan1 = Cloudder::show(Cloudder::getPublicId());
 
         // foto_kegiatan2
         $file3 = $request->file('foto_kegiatan2');
         Cloudder::upload($file3->getRealPath(), null, [
-            'folder' => 'laporan-kegiatan',
+            'folder' => 'laporan-kegiatan/'.$ormas_name.'/foto',
         ]);
         $foto_kegiatan2 = Cloudder::show(Cloudder::getPublicId());
 
@@ -69,7 +73,7 @@ class PelaporanKegiatanController extends Controller
             // foto_kegiatan3
             $file4 = $request->file('foto_kegiatan3');
             Cloudder::upload($file4->getRealPath(), null, [
-                'folder' => 'laporan-kegiatan',
+                'folder' => 'laporan-kegiatan/'.$ormas_name.'/foto',
             ]);
             $foto_kegiatan3 = Cloudder::show(Cloudder::getPublicId());
 

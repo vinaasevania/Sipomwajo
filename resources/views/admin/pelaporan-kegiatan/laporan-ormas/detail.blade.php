@@ -148,7 +148,7 @@
                                         <!--end::Title-->
                                         <!--begin::Buttonpreview-->
                                         <a target="_blank"
-                                            href="{{ asset('storage/laporanKegiatan/' . $laporanOrmas->laporan_kegiatan) }}"
+                                            href="{{ $laporanOrmas->laporan_kegiatan }}"
                                             class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                                         <!--end::Buttonpreview-->
                                     </div>
@@ -163,7 +163,7 @@
                                         <!--end::Title-->
                                         <!--begin::Buttonpreview-->
                                         <a target="_blank"
-                                            href="{{ asset('storage/fotoKegiatan/' . $laporanOrmas->foto_kegiatan1) }}"
+                                            href="{{ $laporanOrmas->foto_kegiatan1 }}"
                                             class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                                         <!--end::Buttonpreview-->
                                     </div>
@@ -178,7 +178,7 @@
                                         <!--end::Title-->
                                         <!--begin::Buttonpreview-->
                                         <a target="_blank"
-                                            href="{{ asset('storage/fotoKegiatan/' . $laporanOrmas->foto_kegiatan2) }}"
+                                            href="{{ $laporanOrmas->foto_kegiatan2 }}"
                                             class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                                         <!--end::Buttonpreview-->
                                     </div>
@@ -194,7 +194,7 @@
                                             <!--end::Title-->
                                             <!--begin::Buttonpreview-->
                                             <a target="_blank"
-                                                href="{{ asset('storage/fotoKegiatan/' . $laporanOrmas->foto_kegiatan3) }}"
+                                                href="{{ $laporanOrmas->foto_kegiatan3 }}"
                                                 class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                                             <!--end::Buttonpreview-->
                                         </div>

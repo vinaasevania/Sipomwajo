@@ -76,7 +76,7 @@
                         </div>
                         <!--end::Title-->
                         <!--begin::Buttonpreview-->
-                        <a target="_blank" href="{{ asset('storage/bukuRekening/' . $verifikasi->fc_burek) }}"
+                        <a target="_blank" href="{{ $verifikasi->fc_burek }}"
                             class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                         <!--end::Buttonpreview-->
                     </div>
@@ -90,7 +90,7 @@
                         </div>
                         <!--end::Title-->
                         <!--begin::Buttonpreview-->
-                        <a target="_blank" href="{{ asset('storage/suratPermohonan/' . $verifikasi->surat_permohonan) }}"
+                        <a target="_blank" href="{{ $verifikasi->surat_permohonan }}"
                             class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                         <!--end::Buttonpreview-->
                     </div>
@@ -103,7 +103,7 @@
                         </div>
                         <!--end::Title-->
                         <!--begin::Buttonpreview-->
-                        <a target="_blank" href="{{ asset('storage/proposal/' . $verifikasi->proposal) }}"
+                        <a target="_blank" href="{{ $verifikasi->proposal }}"
                             class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                         <!--end::Buttonpreview-->
                     </div>
@@ -117,7 +117,7 @@
                         </div>
                         <!--end::Title-->
                         <!--begin::Buttonpreview-->
-                        <a target="_blank" href="{{ asset('storage/fc_ktp_ketua/' . $verifikasi->fc_ktp_ketua) }}"
+                        <a target="_blank" href="{{ $verifikasi->fc_ktp_ketua }}"
                             class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                         <!--end::Buttonpreview-->
                     </div>
@@ -132,7 +132,7 @@
                         <!--end::Title-->
                         <!--begin::Buttonpreview-->
                         <a target="_blank"
-                            href="{{ asset('storage/fc_ktp_sekertaris/' . $verifikasi->fc_ktp_sekertaris) }}"
+                            href="{{ $verifikasi->fc_ktp_sekertaris }}"
                             class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                         <!--end::Buttonpreview-->
                     </div>

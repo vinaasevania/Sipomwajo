@@ -68,7 +68,7 @@
                                         @endphp
 
                                         @if ($latestSkt != null)
-                                            <img src="{{ asset('storage/logo_organisasi/' . $latestSkt->logo_organisasi) }}"
+                                            <img src="{{ $latestSkt->logo_organisasi }}"
                                                 width="100%" alt="">
                                         @else
                                             <div class="symbol-label"

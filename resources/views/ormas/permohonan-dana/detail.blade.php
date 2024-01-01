@@ -180,7 +180,7 @@
                                             <!--end::Title-->
                                             <!--begin::Buttonpreview-->
                                             <a target="_blank"
-                                                href="{{ asset('storage/bukuRekening/' . $permohonanDana->fc_burek) }}"
+                                                href="{{ $permohonanDana->fc_burek }}"
                                                 class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                                             <!--end::Buttonpreview-->
                                         </div>
@@ -195,7 +195,7 @@
                                             <!--end::Title-->
                                             <!--begin::Buttonpreview-->
                                             <a target="_blank"
-                                                href="{{ asset('storage/suratPermohonan/' . $permohonanDana->surat_permohonan) }}"
+                                                href="{{ $permohonanDana->surat_permohonan }}"
                                                 class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                                             <!--end::Buttonpreview-->
                                         </div>
@@ -210,7 +210,7 @@
                                             <!--end::Title-->
                                             <!--begin::Buttonpreview-->
                                             <a target="_blank"
-                                                href="{{ asset('storage/proposal/' . $permohonanDana->proposal) }}"
+                                                href="{{ $permohonanDana->proposal }}"
                                                 class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                                             <!--end::Buttonpreview-->
                                         </div>
@@ -225,7 +225,7 @@
                                             <!--end::Title-->
                                             <!--begin::Buttonpreview-->
                                             <a target="_blank"
-                                                href="{{ asset('storage/fc_ktp_ketua/' . $permohonanDana->fc_ktp_ketua) }}"
+                                                href="{{ $permohonanDana->fc_ktp_ketua }}"
                                                 class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                                             <!--end::Buttonpreview-->
                                         </div>
@@ -239,7 +239,7 @@
                                             <!--end::Title-->
                                             <!--begin::Buttonpreview-->
                                             <a target="_blank"
-                                                href="{{ asset('storage/fc_ktp_sekertaris/' . $permohonanDana->fc_ktp_sekertaris) }}"
+                                                href="{{ $permohonanDana->fc_ktp_sekertaris }}"
                                                 class="btn btn-outline-primary font-weight-bold px-4 py-2">Preview</a>
                                             <!--end::Buttonpreview-->
                                         </div>
