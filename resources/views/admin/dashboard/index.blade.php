@@ -46,7 +46,7 @@
 
                                     <div class="symbol symbol-50 pb-3">
                                         <span class="symbol">
-                                            <img src="{{ secure_secure_asset('assets/media/svg/misc/IC-Totalormas.svg')}}"
+                                            <img src="{{ secure_asset('assets/media/svg/misc/IC-Totalormas.svg')}}"
                                                 class="h-50 align-self-center" alt="" />
                                         </span>
                                     </div>
@@ -72,7 +72,7 @@
 
                                     <div class="symbol symbol-50 pb-3">
                                         <span class="symbol">
-                                            <img src="{{ secure_secure_asset('assets/media/svg/misc/ic-totalpermohonan.svg')}}"
+                                            <img src="{{ secure_asset('assets/media/svg/misc/ic-totalpermohonan.svg')}}"
                                                 class="h-50 align-self-center" alt="" />
                                         </span>
                                     </div>
@@ -104,7 +104,7 @@
 
                                     <div class="symbol symbol-50 pb-3">
                                         <span class="symbol">
-                                            <img src="{{ secure_secure_asset('assets/media/svg/misc/ic-totalperdana.svg')}}"
+                                            <img src="{{ secure_asset('assets/media/svg/misc/ic-totalperdana.svg')}}"
                                                 class="h-50 align-self-center" alt="" />
                                         </span>
                                     </div>
@@ -127,7 +127,7 @@
                                 <div class="flex-grow-1">
                                     <div class="symbol symbol-50 pb-3">
                                         <span class="symbol">
-                                            <img src="{{ secure_secure_asset('assets/media/svg/misc/ic-totalpelaporan.svg')}}"
+                                            <img src="{{ secure_asset('assets/media/svg/misc/ic-totalpelaporan.svg')}}"
                                                 class="h-50 align-self-center" alt="" />
                                         </span>
                                     </div>
