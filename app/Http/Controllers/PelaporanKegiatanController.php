@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\PelaporanKegiatan;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+use JD\Cloudder\Facades\Cloudder;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class PelaporanKegiatanController extends Controller
@@ -40,24 +42,36 @@ class PelaporanKegiatanController extends Controller
         ]);
         // surat permohonan
         $file1 = $request->file('laporan_kegiatan');
-        $laporan_kegiatan = time() . "_" . $file1->getClientOriginalName();
-        $file1->storeAs('public/laporanKegiatan', $laporan_kegiatan);
+
+        Cloudder::upload($file1->getRealPath(), null, [
+            'folder' => 'laporan-kegiatan',
+        ]);
+
+        $laporan_kegiatan = Cloudder::resource(Cloudder::getPublicId());
+        $laporan_kegiatan = $laporan_kegiatan['url'];
 
         // foto_kegiatan1
         $file2 = $request->file('foto_kegiatan1');
-        $foto_kegiatan1 = time() . "_" . $file2->getClientOriginalName();
-        $file2->storeAs('public/fotoKegiatan', $foto_kegiatan1);
+        Cloudder::upload($file2->getRealPath(), null, [
+            'folder' => 'laporan-kegiatan',
+        ]);
+        $foto_kegiatan1 = Cloudder::show(Cloudder::getPublicId());
+
         // foto_kegiatan2
         $file3 = $request->file('foto_kegiatan2');
-        $foto_kegiatan2 = time() . "_" . $file3->getClientOriginalName();
-        $file3->storeAs('public/fotoKegiatan', $foto_kegiatan2);
+        Cloudder::upload($file3->getRealPath(), null, [
+            'folder' => 'laporan-kegiatan',
+        ]);
+        $foto_kegiatan2 = Cloudder::show(Cloudder::getPublicId());
 
 
         if ($request->file('foto_kegiatan3')) {
             // foto_kegiatan3
             $file4 = $request->file('foto_kegiatan3');
-            $foto_kegiatan3 = time() . "_" . $file4->getClientOriginalName();
-            $file4->storeAs('public/fotoKegiatan', $foto_kegiatan3);
+            Cloudder::upload($file4->getRealPath(), null, [
+                'folder' => 'laporan-kegiatan',
+            ]);
+            $foto_kegiatan3 = Cloudder::show(Cloudder::getPublicId());
 
             $pelaporanKegiatan = new PelaporanKegiatan([
                 "status" => "Menunggu Verifikasi",
