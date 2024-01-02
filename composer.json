@@ -7,7 +7,9 @@
     "require": {
         "php": "^8.1",
         "guzzlehttp/guzzle": "^7.2",
+        "jrm2k6/cloudder": "^0.7.0",
         "laravel/framework": "^10.10",
+        "laravel/pail": "^1.0",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
         "realrashid/sweet-alert": "^7.1"
