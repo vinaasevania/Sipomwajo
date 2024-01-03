@@ -11,25 +11,6 @@
                     Detail Ormas
                 </h6>
             </div>
-            {{-- <div class="card-body border-0 d-flex justify-content-end">
-                @if ($ormasTerdaftar->status == 'Berhasil Verifikasi')
-                    <h6 class="font-weight-bolder m-0 py-1 text-primary"
-                        style="background-color: #EEFBF0; padding:24px; border-radius:6px;">
-                        SKT Aktif
-                    </h6>
-                @elseif($ormasTerdaftar->status == 'Menunggu Verifikasi')
-                    <h6 class="font-weight-bolder m-0 py-1 text-warning"
-                        style="background-color: #fbfbee; padding:24px; border-radius:6px;">
-                        SKT Belum diVerifikasi
-                    </h6>
-                @else
-                    <h6 class="font-weight-bolder m-0 py-1 text-danger"
-                        style="background-color: #fbeeee; padding:24px; border-radius:6px;">
-                        SKT Di Batalkan
-
-                    </h6>
-                @endif
-            </div> --}}
         </div>
         <!--end::Header-->
         <!--begin::Body-->
@@ -41,7 +22,7 @@
                         <div class="card-title bg-light" data-toggle="collapse" data-target="#collapseOne8">
                             <div class="card-label">Informasi Keorganisasian</div>
                             <span class="svg-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <svg loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                         <polygon points="0 0 24 0 24 24 0 24"></polygon>
@@ -163,7 +144,7 @@
                         <div class="card-title bg-light collapsed" data-toggle="collapse" data-target="#collapseTwo8">
                             <div class="card-label">Informasi Kepengurusan</div>
                             <span class="svg-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <svg loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                         <polygon points="0 0 24 0 24 24 0 24"></polygon>
@@ -260,7 +241,7 @@
                         <div class="card-title bg-light collapsed" data-toggle="collapse" data-target="#collapseThree8">
                             <div class="card-label">Dokumen Organisasi</div>
                             <span class="svg-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <svg loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                         <polygon points="0 0 24 0 24 24 0 24"></polygon>
