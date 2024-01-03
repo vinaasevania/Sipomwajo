@@ -46,8 +46,9 @@
                             Pelaporan</a>
                         <button data-toggle="modal" data-target="#exampleModalCenter" style="background-color:#87C027"
                             class="btn btn-transparent-white font-weight-bold py-2 px-2 mr-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="26px" height="26px" viewBox="0 0 24 24" version="1.1">
+                            <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px" viewBox="0 0 24 24"
+                                version="1.1">
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd ">
                                     <rect x="0" y="0" width="24" height="24" />
                                     <circle fill="#ffffff" opacity="0.3" cx="12" cy="12" r="10" />
@@ -68,8 +69,9 @@
                     <div class="ms-auto">
                         <button data-toggle="modal" data-target="#exampleModalCenter" style="background-color:#87C027"
                             class="btn btn-transparent-white font-weight-bold py-2 px-2 mr-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="26px" height="26px" viewBox="0 0 24 24" version="1.1">
+                            <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px" viewBox="0 0 24 24"
+                                version="1.1">
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd ">
                                     <rect x="0" y="0" width="24" height="24" />
                                     <circle fill="#ffffff" opacity="0.3" cx="12" cy="12" r="10" />
@@ -99,8 +101,9 @@
                                 <div class="d-flex flex-center mb-10">
                                     <span class="svg-icon svg-icon-5x svg-icon-primary">
                                         <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Flower3.svg-->
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                            width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                        <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
+                                            viewBox="0 0 24 24" version="1.1">
                                             <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                                 <polygon points="0 0 24 0 24 24 0 24" />
                                                 <path
@@ -226,7 +229,7 @@
                                     <div class="d-flex align-items-center mr-5 my-1">
                                         <span class="svg-icon svg-icon-2x svg-icon-primary pr-3">
                                             <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Flower3.svg-->
-                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                            <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -251,7 +254,7 @@
                                     <div class="d-flex align-items-center mr-5 my-1">
                                         <span class="svg-icon svg-icon-2x svg-icon-primary pr-3">
                                             <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Flower3.svg-->
-                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                            <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

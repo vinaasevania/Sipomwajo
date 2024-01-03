@@ -67,7 +67,7 @@
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
                                                     <!--end::Svg Icon-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -92,7 +92,7 @@
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -121,7 +121,7 @@
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/Code/Compiling.svg-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"

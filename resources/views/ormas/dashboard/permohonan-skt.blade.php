@@ -49,7 +49,7 @@
                                         <div class="wizard-label">
                                             <span class="svg-icon svg-icon-4x wizard-icon">
                                                 <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Chat-check.svg-->
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                     viewBox="0 0 24 24" version="1.1">
                                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -69,7 +69,7 @@
                                         </div>
                                         <span class="svg-icon svg-icon-xl wizard-arrow">
                                             <!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
-                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                            <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -92,7 +92,7 @@
                                         <div class="wizard-label">
                                             <span class="svg-icon svg-icon-4x wizard-icon">
                                                 <!--begin::Svg Icon | path:assets/media/svg/icons/Devices/Display1.svg-->
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                     viewBox="0 0 24 24" version="1.1">
                                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -111,7 +111,7 @@
                                         </div>
                                         <span class="svg-icon svg-icon-xl wizard-arrow">
                                             <!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
-                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                            <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -134,7 +134,7 @@
                                         <div class="wizard-label">
                                             <span class="svg-icon svg-icon-4x wizard-icon">
                                                 <!--begin::Svg Icon | path:assets/media/svg/icons/Home/Globe.svg-->
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                     height="24px" viewBox="0 0 24 24" version="1.1">
                                                     <g stroke="none" stroke-width="1" fill="none"
@@ -154,7 +154,7 @@
                                         </div>
                                         <span class="svg-icon svg-icon-xl wizard-arrow">
                                             <!--begin::Svg Icon | path:assets/media/svg/icons/Navigation/Arrow-right.svg-->
-                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                            <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                                                 viewBox="0 0 24 24" version="1.1">
                                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -177,7 +177,7 @@
                                         <div class="wizard-label">
                                             <span class="svg-icon svg-icon-4x wizard-icon">
                                                 <!--begin::Svg Icon | path:assets/media/svg/icons/General/Notification2.svg-->
-                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                     height="24px" viewBox="0 0 24 24" version="1.1">
                                                     <g stroke="none" stroke-width="1" fill="none"
