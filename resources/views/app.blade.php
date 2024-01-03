@@ -5,7 +5,7 @@
 <head>
     <base href="">
     <meta charset="utf-8" />
-    <title>Siormas | {{ $title }}</title>
+    <title>SipomWajo | {{ $title }}</title>
     <meta name="description" content="Updates and statistics" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!--begin::Fonts-->
@@ -66,8 +66,8 @@
             <button class="btn btn-icon btn-hover-transparent-white p-0 ml-3" id="kt_header_mobile_topbar_toggle">
                 <span class="svg-icon svg-icon-xl">
                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg-->
-                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                        height="24px" viewBox="0 0 24 24" version="1.1">
+                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <polygon points="0 0 24 0 24 24 0 24" />
                             <path
