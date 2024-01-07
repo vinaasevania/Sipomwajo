@@ -50,7 +50,7 @@
                     <!--begin: Aside content-->
                     <div class="flex-column-fluid d-flex flex-column justify-content-center">
                         <h6 class="font-weight-lighter text-white opacity-80 pb-2">Selamat Datang</h6>
-                        <h3 class="font-size-h1 mb-5 text-white">Sistem Manajemen Ormas</h3>
+                        <h3 class="font-size-h1 mb-5 text-white">Sistem Pelayanan Ormas <br> Kabupaten Wajo</h3>
                     </div>
                     <!--end: Aside content-->
                     <!--begin: Aside footer for desktop-->
