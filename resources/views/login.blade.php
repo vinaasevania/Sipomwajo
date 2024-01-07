@@ -6,24 +6,24 @@
 <head>
     <base href="../../../../">
     <meta charset="utf-8" />
-    <title>Siormas | Login </title>
+    <title>Sipomwajo | Login </title>
     <meta name="description" content="Login page example" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <!--end::Fonts-->
     <!--begin::Page Custom Styles(used by this page)-->
-    <link href="{{ asset('assets/css/pages/login/classic/login-1.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ secure_asset('assets/css/pages/login/classic/login-1.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
     <!--end::Page Custom Styles-->
     <!--begin::Global Theme Styles(used by all pages)-->
-    <link href="{{ asset('assets/plugins/global/plugins.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('assets/plugins/custom/prismjs/prismjs.bundle.css?v=7.0.5') }}" rel="stylesheet"
+    <link href="{{ secure_asset('assets/plugins/global/plugins.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ secure_asset('assets/plugins/custom/prismjs/prismjs.bundle.css?v=7.0.5') }}" rel="stylesheet"
         type="text/css" />
-    <link href="{{ asset('assets/css/style.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ secure_asset('assets/css/style.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
     <!--end::Global Theme Styles-->
     <!--begin::Layout Themes(used by all pages)-->
     <!--end::Layout Themes-->
-    <link rel="shortcut icon" href="{{ asset('assets/media/logos/logokesbangpol.png') }}" />
+    <link rel="shortcut icon" href="{{ secure_asset('assets/media/logos/logokesbangpol.png') }}" />
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -39,7 +39,7 @@
             id="kt_login">
             <!--begin::Aside-->
             <div class="login-aside d-flex flex-row-auto bgi-size-cover bgi-no-repeat p-10 p-lg-10"
-                style="background-image: url({{ url('assets/media/bg/bg_login1.jpg') }});">
+                style="background-image: url({{ secure_url('assets/media/bg/bg_login1.jpg') }});">
                 <!--begin: Aside Container-->
                 <div class="d-flex flex-row-fluid flex-column justify-content-between">
                     <!--begin: Aside header-->
@@ -50,7 +50,7 @@
                     <!--begin: Aside content-->
                     <div class="flex-column-fluid d-flex flex-column justify-content-center">
                         <h6 class="font-weight-lighter text-white opacity-80 pb-2">Selamat Datang</h6>
-                        <h3 class="font-size-h1 mb-5 text-white">Sistem Manajemen Ormas</h3>
+                        <h3 class="font-size-h1 mb-5 text-white">Sistem Pelayanan Ormas <br> Kabupaten Wajo</h3>
                     </div>
                     <!--end: Aside content-->
                     <!--begin: Aside footer for desktop-->
@@ -92,7 +92,7 @@
                             @endforeach
                         @endif
                         <div id="kt_login_signin_form">
-                            <form action="{{ url('/login') }}" method="POST" class="form">
+                            <form action="{{ secure_url('/login') }}" method="POST" class="form">
                                 @csrf
                                 <div class="form-group">
                                     <input class="form-control form-control-solid h-auto py-5 px-6" type="text"
@@ -121,7 +121,7 @@
                         </div>
                         <!--begin::Form-->
                         <div id="kt_login_signup_form">
-                            <form class="form" action="{{ url('/regis') }}" method="POST">
+                            <form class="form" action="{{ secure_url('/regis') }}" method="POST">
                                 @csrf
                                 <div class="form-group">
                                     <input class="form-control form-control-solid h-auto py-3 px-4" type="text"
@@ -211,15 +211,6 @@
                 </div>
                 <!--end::Content body-->
                 <!--begin::Content footer for mobile-->
-                <div
-                    class="d-flex d-lg-none flex-column-auto flex-column flex-sm-row justify-content-between align-items-center mt-5 p-5">
-                    <div class="text-dark-50 font-weight-bold order-2 order-sm-1 my-2">© 2020 Metronic</div>
-                    <div class="d-flex order-1 order-sm-2 my-2">
-                        <a href="#" class="text-dark-75 text-hover-primary">Privacy</a>
-                        <a href="#" class="text-dark-75 text-hover-primary ml-4">Legal</a>
-                        <a href="#" class="text-dark-75 text-hover-primary ml-4">Contact</a>
-                    </div>
-                </div>
                 <!--end::Content footer for mobile-->
             </div>
             <!--end::Content-->
@@ -293,12 +284,12 @@
     </script>
     <!--end::Global Config-->
     <!--begin::Global Theme Bundle(used by all pages)-->
-    <script src="{{ asset('assets/plugins/global/plugins.bundle.js?v=7.0.5') }}"></script>
-    <script src="{{ asset('assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.5') }}"></script>
-    <script src="{{ asset('assets/js/scripts.bundle.js?v=7.0.5') }}"></script>
+    <script src="{{ secure_asset('assets/plugins/global/plugins.bundle.js?v=7.0.5') }}"></script>
+    <script src="{{ secure_asset('assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.5') }}"></script>
+    <script src="{{ secure_asset('assets/js/scripts.bundle.js?v=7.0.5') }}"></script>
     <!--end::Global Theme Bundle-->
     <!--begin::Page Scripts(used by this page)-->
-    <script src="{{ asset('assets/js/pages/custom/login/login-general.js?v=7.0.5') }}"></script>
+    <script src="{{ secure_asset('assets/js/pages/custom/login/login-general.js?v=7.0.5') }}"></script>
     <!--end::Page Scripts-->
 </body>
 <!--end::Body-->
