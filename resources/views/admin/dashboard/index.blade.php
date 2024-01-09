@@ -47,7 +47,7 @@
                                     <div class="symbol symbol-50 pb-3">
                                         <span class="symbol">
                                             <img src="assets/media/svg/misc/IC-totalormas.svg"
-                                                class="h-50 align-self-center" alt="" loading="lazy"/>
+                                                class="h-50 align-self-center" alt="" />
                                         </span>
                                     </div>
 
@@ -73,7 +73,7 @@
                                     <div class="symbol symbol-50 pb-3">
                                         <span class="symbol">
                                             <img src="assets/media/svg/misc/IC-totalpermohonan.svg"
-                                                class="h-50 align-self-center" alt="" loading="lazy"/>
+                                                class="h-50 align-self-center" alt="" />
                                         </span>
                                     </div>
 
@@ -105,7 +105,7 @@
                                     <div class="symbol symbol-50 pb-3">
                                         <span class="symbol">
                                             <img src="assets/media/svg/misc/IC-Totalperdana.svg"
-                                                class="h-50 align-self-center" alt="" loading="lazy"/>
+                                                class="h-50 align-self-center" alt="" />
                                         </span>
                                     </div>
 
@@ -128,7 +128,7 @@
                                     <div class="symbol symbol-50 pb-3">
                                         <span class="symbol">
                                             <img src="assets/media/svg/misc/IC-Totalpelaporan.svg"
-                                                class="h-50 align-self-center" alt="" loading="lazy"/>
+                                                class="h-50 align-self-center" alt="" />
                                         </span>
                                     </div>
 
