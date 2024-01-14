@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\SKT;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
+use JD\Cloudder\Facades\Cloudder;
+use Illuminate\Support\Str;
 
 class AdminSKTController extends Controller
 {
@@ -12,19 +14,28 @@ class AdminSKTController extends Controller
     {
         $skt = SKT::findOrFail($id);
 
+        $ormas_name = Str::snake($skt->nama_organisasi, '-');
+
         // Validasi request
         $request->validate([
             'skt' => 'required|mimes:pdf|max:50000', // Sesuaikan dengan aturan validasi file Anda
             'keterangan' => 'nullable|string', // Sesuaikan dengan aturan validasi keterangan Anda
         ]);
 
-        // Simpan file SP2P
-        $fileSkt = $request->file('skt');
-        $fileName = time() . '_' . $fileSkt->getClientOriginalName();
-        $fileSkt->storeAs('public/skt', $fileName);
+        // // Simpan file SP2P
+        // $fileSkt = $request->file('skt');
+        // $fileName = time() . '_' . $fileSkt->getClientOriginalName();
+        // $fileSkt->storeAs('public/skt', $fileName);
+
+        $file = $request->file('skt');
+        Cloudder::upload($file->getRealPath(), null, [
+            'folder' => $ormas_name.'/skt',
+        ]);
+        $skt_res = Cloudder::resource(Cloudder::getPublicId());
+        $skt_res = $skt_res['url'];
 
         // Update data SP2P
-        $skt->skt = $fileName;
+        $skt->skt = $skt_res;
         $skt->keterangan = $request->keterangan;
         $skt->status = 'Berhasil Kirim SKT';
         $skt->save();
