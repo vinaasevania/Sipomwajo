@@ -80,7 +80,7 @@
                                         {{-- <a href="{{ secure_asset('storage/skt/' . $latestStatusSkt->skt) }}" target="_blank"
                                         class="btn btn-primary font-weight-bold px-4 py-2">Preview</a> --}}
                                         <a class="btn btn-primary font-weight-bold px-4 py-2"
-                                            href="{{ secure_asset('storage/sp2p/' . $permohonanDana->file_sp2p) }}"
+                                            href="{{ $permohonanDana->file_sp2p }}"
                                             target="_blank">Preview</a>
                                         <!--end::Wrapper-->
                                     </div>
