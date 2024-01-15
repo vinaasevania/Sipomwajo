@@ -22,7 +22,7 @@
                         <span class="text-primary">Permohonan SKT Anda telah berhasil, silahkan lakukan preview </span>
                         <!--end::Content-->
                     </div>
-                    <a href="{{ secure_asset('storage/skt/' . $latestStatusSkt->skt) }}" target="_blank"
+                    <a href="{{ $latestStatusSkt->skt) }}" target="_blank"
                         class="btn btn-primary font-weight-bold px-4 py-2">Preview</a>
                     <!--end::Wrapper-->
                 </div>
