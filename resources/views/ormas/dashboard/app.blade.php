@@ -46,6 +46,7 @@
                 <!--begin::Profile Overview-->
                 <div class="d-flex flex-row">
                     <!--begin::Aside-->
+                    {{-- card kiri --}}
                     <div class="flex-row-auto offcanvas-mobile  w-300px w-xl-300px" id="kt_profile_aside">
                         <!--begin::Profile Card-->
                         <div class="card card-custom">
@@ -194,6 +195,7 @@
                     </div>
                     <!--end::Aside-->
                     <!--begin::Content-->
+                    {{-- card kanan --}}
                     <div class="flex-row-fluid ml-lg-8">
                         @yield('detail')
                         <!--end::Advance Table Widget 7-->

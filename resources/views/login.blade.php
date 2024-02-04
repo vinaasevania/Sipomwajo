@@ -63,7 +63,7 @@
                     <!--begin::Signin-->
                     <div class="login-form login-signin">
                         <div class="text-center mb-10">
-                            <h3 class="font-size-h1">Silahkan Login</h3>
+                            <h3 class="font-size-h1">Silahkan Masuk</h3>
                             <p class="text-muted font-weight-bold">Masukkan Username dan Password Anda</p>
                         </div>
                         <!--begin::Form-->

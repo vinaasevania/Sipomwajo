@@ -199,11 +199,6 @@
                         'rgba(0, 110, 51, 1)',
                         'rgba(135, 192, 39, 1)'
                     ],
-                    borderColor: [
-                        'rgba(0, 142, 66, 1, 0.2)',
-                        'rgba(0, 110, 51, 1, 0.2)',
-                        'rgba(135, 192, 39, 1, 0.2)'
-                    ],
                     borderWidth: 0
                 }]
             },
@@ -236,13 +231,6 @@
                     data: {!! $totalOrmasByYear->pluck('total_ormas') !!},
                     backgroundColor: [
                         'rgba(0, 142, 66, 1)',
-                        'rgba(0, 110, 51, 1)',
-                        'rgba(135, 192, 39, 1)'
-                    ],
-                    borderColor: [
-                        'rgba(0, 142, 66, 1, 0.2)',
-                        'rgba(0, 110, 51, 1, 0.2)',
-                        'rgba(135, 192, 39, 1, 0.2)'
                     ],
                     borderWidth: 0
                 }]

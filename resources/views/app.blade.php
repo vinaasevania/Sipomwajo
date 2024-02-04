@@ -54,7 +54,7 @@
     <div id="kt_header_mobile" class="header-mobile">
         <!--begin::Logo-->
         <span>
-            <img alt="Logo" loading="lazy" src="{{ asset('assets/media/logos/logo-ormas.png') }}"
+            <img alt="Logo" loading="lazy" src="{{ asset('assets/media/logos/logokesbangpol.png') }}"
                 class="logo-default max-h-30px" />
         </span>
         <!--end::Logo-->
@@ -86,11 +86,12 @@
     </div>
     <!--end::Header Mobile-->
     <div class="d-flex flex-column flex-root">
-        <!--begin::Page-->
+        <!--begin::Page web-->
         <div class="d-flex flex-row flex-column-fluid page">
             <!--begin::Wrapper-->
             <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
                 <!--begin::Header-->
+                {{-- ganti warna navbar didekat background color --}}
                 <div id="kt_header" class="header header-fixed">
                     <!--begin::Container-->
                     <div class="container d-flex align-items-stretch justify-content-between">
@@ -98,10 +99,11 @@
                         <div class="d-flex align-items-stretch mr-3">
                             <!--begin::Header Logo-->
                             <div class="header-logo">
-                                <span>
+                                <span class="d-flex" style="gap: 10px;">
                                     <img alt="Logo" loading="lazy"
-                                        src="{{ asset('assets/media/logos/logo-ormas.png') }}"
+                                        src="{{ asset('assets/media/logos/logokesbangpol.png') }}"
                                         class="logo-default max-h-40px" />
+                                    <p style="font-size: 12px" class=" align-self-center text-light">Badan Kesatuan Bangsa dan Politik <br> Kabupaten Wajo</p>
                                 </span>
                             </div>
                             <!--end::Header Logo-->
@@ -189,14 +191,15 @@
                 <!--begin::Content-->
                 @yield('content')
                 <!--end::Content-->
-                <!--begin::Footer-->
-                <div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+                <!--begin::Footer--> 
+                {{-- Bagian Footer --}}
+                <div class="footer py-4 d-flex flex-lg-column" style="background-color:white;" id="kt_footer">
                     <!--begin::Container-->
                     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
                         <!--begin::Copyright-->
-                        <div class="text-dark order-2 order-md-1">
-                            <span class="text-muted font-weight-bold mr-2">2023©</span>
-                            <a href="" target="_blank" class="text-dark-75 text-hover-primary">Kesbangpol
+                        <div class=" order-2 order-md-1">
+                            <span style="color:black" class=" font-weight-bold mr-2">2023©</span>
+                            <a href="" target="_blank" style="color: black">Kesbangpol
                                 Kabupaten Wajo</a>
                         </div>
                         <!--end::Copyright-->

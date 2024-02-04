@@ -15,7 +15,7 @@
                     <!--begin::Heading-->
                     <div class="d-flex flex-column">
                         <!--begin::Title-->
-                        <h2 class="text-white font-weight-bold my-2 mr-5">Permohonan SKT</h2>
+                        <h2 class="text-white font-weight-bold my-2 mr-5">Permohonan Surat Keterangan Terdaftar</h2>
                         <!--end::Title-->
                         <!--begin::Breadcrumb-->
                         <div class="d-flex align-items-center font-weight-bold my-2">
@@ -53,6 +53,7 @@
                 <!--begin::Profile Overview-->
                 <div class="d-flex flex-row">
                     <!--begin::Aside-->
+                    {{-- card kiri --}}
                     <div class="flex-row-auto offcanvas-mobile  w-250px w-xl-250px" id="kt_profile_aside">
                         <!--begin::Profile Card-->
                         <div class="card card-custom">
@@ -150,6 +151,7 @@
                     </div>
                     <!--end::Aside-->
                     <!--begin::Content-->
+                    {{-- card kanan --}}
                     <div class="flex-row-fluid ml-lg-8">
 
                         @yield('detail')

@@ -2,6 +2,7 @@
     <!--begin::Header Menu-->
     <div id="kt_header_menu" class="header-menu header-menu-left header-menu-mobile header-menu-layout-default">
         <!--begin::Header Nav-->
+        {{-- Navbar Admin --}}
         @if (auth()->user()->roles == 'admin')
             <ul class="menu-nav">
                 <li
@@ -35,6 +36,7 @@
                     </a>
                 </li>
             </ul>
+        {{-- Navbar Ormas --}}
         @else
             <ul class="menu-nav">
                 <li class="menu-item menu-item-submenu {{ in_array($title, ['Dashboard Ormas', 'Permohonan SKT']) ? 'menu-item-here' : 'menu-item-rel' }}"
