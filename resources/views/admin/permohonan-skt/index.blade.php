@@ -15,7 +15,7 @@
                     <!--begin::Heading-->
                     <div class="d-flex flex-column">
                         <!--begin::Title-->
-                        <h2 class="text-white font-weight-bold my-2 mr-5">Permohonan SKT</h2>
+                        <h2 class="text-white font-weight-bold my-2 mr-5">Permohonan Surat Keterangan Terdaftar</h2>
                         <!--end::Title-->
                         <!--begin::Breadcrumb-->
                         <div class="d-flex align-items-center font-weight-bold my-2">
@@ -53,6 +53,7 @@
                 <!--begin::Profile Overview-->
                 <div class="d-flex flex-row">
                     <!--begin::Aside-->
+                    {{-- card kiri --}}
                     <div class="flex-row-auto offcanvas-mobile  w-250px w-xl-250px" id="kt_profile_aside">
                         <!--begin::Profile Card-->
                         <div class="card card-custom">
@@ -61,13 +62,13 @@
 
                                 <div class="navi navi-bold navi-hover navi-active navi-link-rounded">
                                     <div class="navi-item mb-2">
-                                        <a href="{{ secure_url('permohonan-skt/ormas-terdaftar') }}"
+                                        <a href="{{ url('permohonan-skt/ormas-terdaftar') }}"
                                             class="navi-link py-4  @if (Route::currentRouteName() == 'permohonan-skt.ormas') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
                                                     <!--end::Svg Icon-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -87,12 +88,12 @@
                                         </a>
                                     </div>
                                     <div class="navi-item mb-2 ">
-                                        <a href="{{ secure_url('permohonan-skt/verifikasi') }}"
+                                        <a href="{{ url('permohonan-skt/verifikasi') }}"
                                             class="navi-link py-4 @if (Route::currentRouteName() == 'permohonan-skt.verifikasi') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -116,12 +117,12 @@
                                         </a>
                                     </div>
                                     <div class="navi-item mb-2">
-                                        <a href="{{ secure_url('permohonan-skt/menunggu') }}"
+                                        <a href="{{ url('permohonan-skt/menunggu') }}"
                                             class="navi-link py-4 @if (Route::currentRouteName() == 'permohonan-skt.menunggu') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/Code/Compiling.svg-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -150,6 +151,7 @@
                     </div>
                     <!--end::Aside-->
                     <!--begin::Content-->
+                    {{-- card kanan --}}
                     <div class="flex-row-fluid ml-lg-8">
 
                         @yield('detail')

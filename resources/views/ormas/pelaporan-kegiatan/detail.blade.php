@@ -26,7 +26,7 @@
                             <!--end::Item-->
                             <!--begin::Item-->
                             <span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-                            <a href="{{ secure_url('pelaporan-kegiatan/index') }}"
+                            <a href="{{ url('pelaporan-kegiatan/index') }}"
                                 class="text-white text-hover-white opacity-75 hover-opacity-100">Pelaporan
                                 Kegiatan</a>
                             <!--end::Item-->
@@ -55,7 +55,7 @@
                         <div class="row justify-content-center my-10 mx-8 px-8 my-lg-15 px-lg-10">
                             <div class="col-xl-12">
                                 <div class="d-flex border-0 pb-6">
-                                    <a href="{{ secure_url('/pelaporan-kegiatan/index') }}" class="card-icon pr-4 py-0">
+                                    <a href="{{ url('/pelaporan-kegiatan/index') }}" class="card-icon pr-4 py-0">
                                         <i class="flaticon2-left-arrow-1 text-dark"></i>
                                     </a>
                                     <h6 class="font-weight-bolder m-0 py-1">
@@ -239,7 +239,7 @@
                                     @endif
                                 </div>
                                 {{-- <div class="d-flex justify-content-end border-top pt-10">
-                                    <a href="{{ secure_url('/pelaporan-kegiatan/index') }}"
+                                    <a href="{{ url('/pelaporan-kegiatan/index') }}"
                                         class="btn btn-primary font-weight-bold text-uppercase px-6 py-3">
                                         Kembali</a>
                                 </div> --}}

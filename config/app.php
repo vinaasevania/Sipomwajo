@@ -160,8 +160,7 @@ return [
          * Package Service Providers...
          */
         JD\Cloudder\CloudderServiceProvider::class,
-        
-        
+
 
         /*
          * Application Service Providers...

@@ -5,28 +5,28 @@
 <head>
     <base href="">
     <meta charset="utf-8" />
-    <title>Sipomwajo | {{ $title }}</title>
+
+    <title>SipomWajo | {{ $title }}</title>
+
     <meta name="description" content="Updates and statistics" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
     <!--end::Fonts-->
     <!--begin::Page Vendors Styles(used by this page)-->
-    <link href="{{ secure_asset('assets/plugins/custom/fullcalendar/fullcalendar.bundle.css?v=7.0.5') }}" rel="stylesheet"
+    <link href="{{ asset('assets/plugins/custom/datatables/datatables.bundle.css?v=7.0.5') }}" rel="stylesheet"
         type="text/css" />
-    <link href="{{ secure_asset('assets/plugins/custom/datatables/datatables.bundle.css?v=7.0.5') }}" rel="stylesheet"
-        type="text/css" />
-    <link href="{{ secure_asset('assets/css/pages/wizard/wizard-1.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/css/pages/wizard/wizard-1.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
     <!--end::Page Vendors Styles-->
     <!--begin::Global Theme Styles(used by all pages)-->
-    <link href="{{ secure_asset('assets/plugins/global/plugins.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
-    <link href="{{ secure_asset('assets/plugins/custom/prismjs/prismjs.bundle.css?v=7.0.5') }}" rel="stylesheet"
-        type="text/css" />
-    <link href="{{ secure_asset('assets/css/style.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('assets/plugins/global/plugins.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
+    {{-- <link href="{{ asset('assets/plugins/custom/prismjs/prismjs.bundle.css?v=7.0.5') }}" rel="stylesheet"
+        type="text/css" /> --}}
+    <link href="{{ asset('assets/css/style.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
     <!--end::Global Theme Styles-->
     <!--begin::Layout Themes(used by all pages)-->
     <!--end::Layout Themes-->
-    <link rel="shortcut icon" href="{{ secure_asset('assets/media/logos/logokesbangpol.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('assets/media/logos/logokesbangpol.png') }}" />
     <style>
         .dataTables_wrapper .dataTable th.sorting_asc:before {
             display: none;
@@ -48,7 +48,7 @@
 <!--end::Head-->
 <!--begin::Body-->
 
-<body id="kt_body" style="background-image: url({{ secure_asset('assets/media/bg/bg-main.jpg') }})"
+<body id="kt_body" style="background-image: url({{ asset('assets/media/bg/bg-main.jpg') }})"
     class="quick-panel-right demo-panel-right offcanvas-right header-fixed subheader-enabled page-loading">
     <!--begin::Main-->
     <!--begin::Header Mobile-->
@@ -56,7 +56,7 @@
     <div id="kt_header_mobile" class="header-mobile">
         <!--begin::Logo-->
         <span>
-            <img alt="Logo" src="{{ secure_asset('assets/media/logos/logo-ormas.png') }}"
+            <img alt="Logo" loading="lazy" src="{{ asset('assets/media/logos/logokesbangpol.png') }}"
                 class="logo-default max-h-30px" />
         </span>
         <!--end::Logo-->
@@ -68,8 +68,8 @@
             <button class="btn btn-icon btn-hover-transparent-white p-0 ml-3" id="kt_header_mobile_topbar_toggle">
                 <span class="svg-icon svg-icon-xl">
                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg-->
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-                        height="24px" viewBox="0 0 24 24" version="1.1">
+                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <polygon points="0 0 24 0 24 24 0 24" />
                             <path
@@ -88,11 +88,12 @@
     </div>
     <!--end::Header Mobile-->
     <div class="d-flex flex-column flex-root">
-        <!--begin::Page-->
+        <!--begin::Page web-->
         <div class="d-flex flex-row flex-column-fluid page">
             <!--begin::Wrapper-->
             <div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
                 <!--begin::Header-->
+                {{-- ganti warna navbar didekat background color --}}
                 <div id="kt_header" class="header header-fixed">
                     <!--begin::Container-->
                     <div class="container d-flex align-items-stretch justify-content-between">
@@ -100,9 +101,11 @@
                         <div class="d-flex align-items-stretch mr-3">
                             <!--begin::Header Logo-->
                             <div class="header-logo">
-                                <span>
-                                    <img alt="Logo" src="{{ secure_asset('assets/media/logos/logo-ormas.png') }}"
+                                <span class="d-flex" style="gap: 10px;">
+                                    <img alt="Logo" loading="lazy"
+                                        src="{{ asset('assets/media/logos/logokesbangpol.png') }}"
                                         class="logo-default max-h-40px" />
+                                    <p style="font-size: 12px" class=" align-self-center text-light">Badan Kesatuan Bangsa dan Politik <br> Kabupaten Wajo</p>
                                 </span>
                             </div>
                             <!--end::Header Logo-->
@@ -170,7 +173,7 @@
                                     <!--begin::Nav-->
                                     <div class="navi navi-spacer-x-0 pt-5">
                                         <div class="navi-footer px-8 py-5">
-                                            <a href="{{ secure_url('/logout') }}"
+                                            <a href="{{ url('/logout') }}"
                                                 class="btn btn-outline-primary font-weight-bold">Logout</a>
                                             <!-- <a href="custom/user/login-v2.html" target="_blank" class="btn btn-clean font-weight-bold">Upgrade Plan</a> -->
                                         </div>
@@ -190,14 +193,15 @@
                 <!--begin::Content-->
                 @yield('content')
                 <!--end::Content-->
-                <!--begin::Footer-->
-                <div class="footer bg-white py-4 d-flex flex-lg-column" id="kt_footer">
+                <!--begin::Footer--> 
+                {{-- Bagian Footer --}}
+                <div class="footer py-4 d-flex flex-lg-column" style="background-color:white;" id="kt_footer">
                     <!--begin::Container-->
                     <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
                         <!--begin::Copyright-->
-                        <div class="text-dark order-2 order-md-1">
-                            <span class="text-muted font-weight-bold mr-2">2023©</span>
-                            <a href="" target="_blank" class="text-dark-75 text-hover-primary">Kesbangpol
+                        <div class=" order-2 order-md-1">
+                            <span style="color:black" class=" font-weight-bold mr-2">2023©</span>
+                            <a href="" target="_blank" style="color: black">Kesbangpol
                                 Kabupaten Wajo</a>
                         </div>
                         <!--end::Copyright-->
@@ -271,9 +275,6 @@
                 }
             });
     </script>
-    <script>
-        var HOST_URL = "https://keenthemes.com/metronic/tools/preview";
-    </script>
     <!--begin::Global Config(global config for global JS scripts)-->
     <script>
         var KTAppSettings = {
@@ -337,22 +338,22 @@
     </script>
     <!--end::Global Config-->
     <!--begin::Global Theme Bundle(used by all pages)-->
-    <script src="{{ secure_asset('assets/plugins/global/plugins.bundle.js?v=7.0.5') }}"></script>
-    <script src="{{ secure_asset('assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.5') }}"></script>
-    <script src="{{ secure_asset('assets/js/scripts.bundle.js?v=7.0.5') }}"></script>
+    <script src="{{ asset('assets/plugins/global/plugins.bundle.js?v=7.0.5') }}"></script>
+    {{-- <script src="{{ asset('assets/plugins/custom/prismjs/prismjs.bundle.js?v=7.0.5') }}"></script> --}}
+    <script src="{{ asset('assets/js/scripts.bundle.js?v=7.0.5') }}"></script>
     <!--end::Global Theme Bundle-->
     <!--begin::Page Vendors(used by this page)-->
-    <script src="{{ secure_asset('assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.0.5') }}"></script>
+    {{-- <script src="{{ asset('assets/plugins/custom/fullcalendar/fullcalendar.bundle.js?v=7.0.5') }}"></script> --}}
     <!--end::Page Vendors-->
     <!--begin::Page Scripts(used by this page)-->
-    <script src="{{ secure_asset('assets/js/pages/widgets.js?v=7.0.5') }}"></script>
-    <script src="{{ secure_asset('assets/js/pages/custom/wizard/wizard-1.js?v=7.0.5') }}"></script>
+    <script src="{{ asset('assets/js/pages/widgets.js?v=7.0.5') }}"></script>
+    <script src="{{ asset('assets/js/pages/custom/wizard/wizard-1.js?v=7.0.5') }}"></script>
     <!--end::Page Scripts-->
     <!--begin::Page Vendors(used by this page)-->
-    <script src="{{ secure_asset('assets/plugins/custom/datatables/datatables.bundle.js?v=7.0.5') }}"></script>
+    <script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js?v=7.0.5') }}"></script>
     <!--end::Page Vendors-->
     <!--begin::Page Scripts(used by this page)-->
-    <script src="{{ secure_asset('assets/js/pages/crud/datatables/data-sources/html.js?v=7.0.5') }}"></script>
+    <script src="{{ asset('assets/js/pages/crud/datatables/data-sources/html.js?v=7.0.5') }}"></script>
 </body>
 <!--end::Body-->
 

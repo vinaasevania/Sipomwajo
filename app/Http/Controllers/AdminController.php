@@ -13,6 +13,7 @@ class AdminController extends Controller
 {
     public function dashboard()
     {
+
         $totalOrmas = SKT::where('status', 'Berhasil Kirim SKT')
             ->orWhere('status', 'Berhasil Verifikasi')->count();
 
@@ -22,7 +23,7 @@ class AdminController extends Controller
             ->groupBy('year')
             ->get();
 
-        $totalSkt = SKT::count();
+        $totalSkt = SKT::where('status', 'Menunggu Verifikasi')->orWhere('status', 'Berhasil Verifikasi')->count();
         $totalPermohonanDana = PermohonanDana::count();
         $totalPelaporanKegiatan = PelaporanKegiatan::count();
         return view('admin.dashboard.index', compact('totalOrmas', 'totalPelaporanKegiatan', 'totalPermohonanDana', 'totalSkt', 'totalOrmasByYear'));

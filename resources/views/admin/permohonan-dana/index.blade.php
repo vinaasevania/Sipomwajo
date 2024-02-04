@@ -57,13 +57,13 @@
 
                                 <div class="navi navi-bold navi-hover navi-active navi-link-rounded">
                                     <div class="navi-item mb-2">
-                                        <a href="{{ secure_url('permohonan-dana/ormas-pemohon') }}"
+                                        <a href="{{ url('permohonan-dana/ormas-pemohon') }}"
                                             class="navi-link py-4  @if (Route::currentRouteName() == 'permohonan-dana.dana') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
                                                     <!--end::Svg Icon-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -83,12 +83,12 @@
                                         </a>
                                     </div>
                                     <div class="navi-item mb-2 ">
-                                        <a href="{{ secure_url('permohonan-dana/verifikasi') }}"
+                                        <a href="{{ url('permohonan-dana/verifikasi') }}"
                                             class="navi-link py-4 @if (Route::currentRouteName() == 'permohonan-dana.verifikasi') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -112,12 +112,12 @@
                                         </a>
                                     </div>
                                     <div class="navi-item mb-2">
-                                        <a href="{{ secure_url('permohonan-dana/menunggu') }}"
+                                        <a href="{{ url('permohonan-dana/menunggu') }}"
                                             class="navi-link py-4 @if (Route::currentRouteName() == 'permohonan-dana.menunggu') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/Code/Compiling.svg-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"

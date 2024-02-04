@@ -77,12 +77,12 @@
                             <!--begin::Toolbar-->
                             <div class="d-flex align-items-center">
                                 <!--begin::Button-->
-                                <a href="{{ secure_url('/dashboard-ormas/permohonan-skt') }}" style="background-color:#87C027"
+                                <a href="{{ url('/dashboard-ormas/permohonan-skt') }}" style="background-color:#87C027"
                                     class="btn btn-transparent-white font-weight-bold py-3 px-6 mr-2">Buat Permohonan</a>
                                 <button data-toggle="modal" data-target="#exampleModalCenter"
                                     style="background-color:#87C027"
                                     class="btn btn-transparent-white font-weight-bold py-2 px-2 mr-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                         width="26px" height="26px" viewBox="0 0 24 24" version="1.1">
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd ">
                                             <rect x="0" y="0" width="24" height="24" />

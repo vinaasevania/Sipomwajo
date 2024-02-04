@@ -3,7 +3,7 @@
     <div class="card card-custom">
         <!--begin::Header-->
         <div class="card-body d-flex border-0">
-            <a href={{ secure_url('/permohonan-dana/ormas-pemohon') }} class="card-icon pr-4 py-0">
+            <a href={{ url('/permohonan-dana/ormas-pemohon') }} class="card-icon pr-4 py-0">
                 <i class="flaticon2-left-arrow-1 text-dark"></i>
             </a>
             <h6 class="font-weight-bolder m-0 py-1">
@@ -20,7 +20,7 @@
                         <div class="card-title bg-light" data-toggle="collapse" data-target="#collapseOne8">
                             <div class="card-label">Informasi Pemohon</div>
                             <span class="svg-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <svg loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                         <polygon points="0 0 24 0 24 24 0 24"></polygon>
@@ -103,7 +103,7 @@
                         <div class="card-title bg-light collapsed" data-toggle="collapse" data-target="#collapseThree8">
                             <div class="card-label">Dokumen Pemohon</div>
                             <span class="svg-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                <svg loading="lazy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                         <polygon points="0 0 24 0 24 24 0 24"></polygon>

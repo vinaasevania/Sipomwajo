@@ -27,11 +27,6 @@
                             <!--begin::Item-->
                             <span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
                             <a href="" class="text-white text-hover-white opacity-75 hover-opacity-100">Dashboard</a>
-                            <!--end::Item-->
-                            <!--begin::Item-->
-                            {{-- <span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>
-                        <a href="" class="text-white text-hover-white opacity-75 hover-opacity-100">Ormas Terdaftar</a>
-                         --}}
                         </div>
                         <!--end::Breadcrumb-->
                     </div>
@@ -51,6 +46,7 @@
                 <!--begin::Profile Overview-->
                 <div class="d-flex flex-row">
                     <!--begin::Aside-->
+                    {{-- card kiri --}}
                     <div class="flex-row-auto offcanvas-mobile  w-300px w-xl-300px" id="kt_profile_aside">
                         <!--begin::Profile Card-->
                         <div class="card card-custom">
@@ -68,11 +64,10 @@
                                         @endphp
 
                                         @if ($latestSkt != null)
-                                            <img src="{{ $latestSkt->logo_organisasi }}"
-                                                width="100%" alt="">
+                                            <img src="{{ $latestSkt->logo_organisasi }}" width="100%" alt="">
                                         @else
                                             <div class="symbol-label"
-                                                style="background-image:secure_url('assets/media/users/logo_ormas.png')"></div>
+                                                style="background-image:url('assets/media/users/logo_ormas.png')"></div>
                                         @endif
                                     </div>
                                     {{-- <div class="bgi-no-repeat bgi-size-cover rounded min-h-100px w-100" style="background-image: url(assets/media/stock-600x400/img-72.jpg)"></div> --}}
@@ -87,13 +82,13 @@
                                 <!--end::Contact-->
                                 <div class="navi navi-bold navi-hover navi-active navi-link-rounded">
                                     <div class="navi-item mb-2">
-                                        <a href="{{ secure_url('dashboard-ormas/status-skt') }}"
+                                        <a href="{{ url('dashboard-ormas/status-skt') }}"
                                             class="navi-link py-4  @if (Route::currentRouteName() == 'dashboard-ormas.status') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/Design/Layers.svg-->
                                                     <!--end::Svg Icon-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -113,12 +108,12 @@
                                         </a>
                                     </div>
                                     <div class="navi-item mb-2 ">
-                                        <a href="{{ secure_url('dashboard-ormas/keorganisasian') }}"
+                                        <a href="{{ url('dashboard-ormas/keorganisasian') }}"
                                             class="navi-link py-4 @if (Route::currentRouteName() == 'dashboard-ormas.keorganisasian') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/General/User.svg-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -140,12 +135,12 @@
                                         </a>
                                     </div>
                                     <div class="navi-item mb-2">
-                                        <a href="{{ secure_url('dashboard-ormas/kepengurusan') }}"
+                                        <a href="{{ url('dashboard-ormas/kepengurusan') }}"
                                             class="navi-link py-4 @if (Route::currentRouteName() == 'dashboard-ormas.kepengurusan') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/Code/Compiling.svg-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -166,12 +161,12 @@
                                         </a>
                                     </div>
                                     <div class="navi-item mb-2">
-                                        <a href="{{ secure_url('dashboard-ormas/dokumen') }}"
+                                        <a href="{{ url('dashboard-ormas/dokumen') }}"
                                             class="navi-link py-4 @if (Route::currentRouteName() == 'dashboard-ormas.dokumen') active @endif">
                                             <span class="navi-icon mr-2">
                                                 <span class="svg-icon">
                                                     <!--begin::Svg Icon | path:assets/media/svg/icons/Code/Compiling.svg-->
-                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                    <svg loading="lazy" xmlns="http://www.w3.org/2000/svg"
                                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
                                                         height="24px" viewBox="0 0 24 24" version="1.1">
                                                         <g stroke="none" stroke-width="1" fill="none"
@@ -200,6 +195,7 @@
                     </div>
                     <!--end::Aside-->
                     <!--begin::Content-->
+                    {{-- card kanan --}}
                     <div class="flex-row-fluid ml-lg-8">
                         @yield('detail')
                         <!--end::Advance Table Widget 7-->

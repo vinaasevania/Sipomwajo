@@ -29,7 +29,7 @@ Route::get('/logout', [AuthController::class, 'logout']);
 
 Route::group(['middleware' => ['auth', 'Roles:admin']], function () {
 
-    Route::get('/', [AdminController::class, 'dashboard'])->name('dashboard');
+    Route::get('/',  [AdminController::class, 'dashboard'])->name('dashboard');
 
 
     Route::group(['prefix' => 'permohonan-skt'], function () {
