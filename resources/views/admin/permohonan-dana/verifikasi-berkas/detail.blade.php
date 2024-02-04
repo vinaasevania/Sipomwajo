@@ -3,7 +3,7 @@
     <div class="card card-custom">
         <!--begin::Header-->
         <div class="card-body d-flex border-0">
-            <a href="{{ url('/permohonan-dana/verifikasi') }}">
+            <a href="{{ secure_url('/permohonan-dana/verifikasi') }}">
                 <span class="card-icon pr-4 py-0">
                     <i class="flaticon2-left-arrow-1 text-dark"></i>
                 </span>

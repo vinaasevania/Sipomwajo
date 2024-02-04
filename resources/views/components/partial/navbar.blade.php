@@ -14,14 +14,14 @@
                 </li>
                 <li class="menu-item menu-item-submenu @if (str_contains(Route::currentRouteName(), 'permohonan-skt')) menu-item-here @endif menu-item-rel"
                     data-menu-toggle="click" aria-haspopup="true">
-                    <a href="{{ url('/permohonan-skt/ormas-terdaftar') }}" class="menu-link">
+                    <a href="{{ secure_url('/permohonan-skt/ormas-terdaftar') }}" class="menu-link">
                         <span class="menu-text">Permohonan SKT</span>
                         <i class="menu-arrow"></i>
                     </a>
                 </li>
                 <li class="menu-item menu-item-submenu @if (str_contains(Route::currentRouteName(), 'permohonan-dana')) menu-item-here @endif menu-item-rel"
                     data-menu-toggle="click" aria-haspopup="true">
-                    <a href="{{ url('/permohonan-dana/ormas-pemohon') }}" class="menu-link">
+                    <a href="{{ secure_url('/permohonan-dana/ormas-pemohon') }}" class="menu-link">
                         <span class="menu-text">Permohonan Dana</span>
                         <span class="menu-desc"></span>
                         <i class="menu-arrow"></i>
@@ -29,7 +29,7 @@
                 </li>
                 <li class="menu-item menu-item-submenu @if (str_contains(Route::currentRouteName(), 'pelaporan-kegiatan')) menu-item-here @endif menu-item-rel"
                     data-menu-toggle="click" aria-haspopup="true">
-                    <a href="{{ url('/pelaporan-kegiatan/laporan-ormas') }}" class="menu-link">
+                    <a href="{{ secure_url('/pelaporan-kegiatan/laporan-ormas') }}" class="menu-link">
                         <span class="menu-text">Pelaporan Kegiatan</span>
                         <span class="menu-desc"></span>
                         <i class="menu-arrow"></i>
@@ -45,7 +45,7 @@
                         $skt = \App\Models\SKT::where('ormas_id', auth()->user()->id)->first();
                     @endphp
 
-                    <a href="{{ $skt ? url('/dashboard-ormas/status-skt') : url('/dashboard-ormas') }}"
+                    <a href="{{ $skt ? secure_url('/dashboard-ormas/status-skt') : secure_url('/dashboard-ormas') }}"
                         class="menu-link">
                         <span class="menu-text">Dashboard</span>
                         <i class="menu-arrow"></i>
@@ -53,7 +53,7 @@
                 </li>
                 <li class="menu-item menu-item-submenu {{ $title == 'Permohonan Dana' ? 'menu-item-here' : 'menu-item-rel' }}"
                     data-menu-toggle="click" aria-haspopup="true">
-                    <a href="{{ url('/permohonan-dana/index') }}" class="menu-link">
+                    <a href="{{ secure_url('/permohonan-dana/index') }}" class="menu-link">
                         <span class="menu-text">Permohonan Dana</span>
                         <span class="menu-desc"></span>
                         <i class="menu-arrow"></i>
@@ -61,7 +61,7 @@
                 </li>
                 <li class="menu-item menu-item-submenu {{ $title == 'Pelaporan Kegiatan' ? 'menu-item-here' : 'menu-item-rel' }}"
                     data-menu-toggle="click" aria-haspopup="true">
-                    <a href="{{ url('/pelaporan-kegiatan/index') }}" class="menu-link">
+                    <a href="{{ secure_url('/pelaporan-kegiatan/index') }}" class="menu-link">
                         <span class="menu-text">Pelaporan Kegiatan</span>
                         <span class="menu-desc"></span>
                         <i class="menu-arrow"></i>

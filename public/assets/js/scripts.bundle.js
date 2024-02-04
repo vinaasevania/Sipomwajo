@@ -1286,7 +1286,7 @@ var KTImageInput = function(elementId, options) {
 	            if (the.input && the.input.files && the.input.files[0]) {
 	                var reader = new FileReader();
 	                reader.onload = function(e) {
-	                    KTUtil.css(the.wrapper, 'background-image', 'url('+e.target.result +')');
+	                    KTUtil.css(the.wrapper, 'background-image', 'secure_url('+e.target.result +')');
 	                }
 	                reader.readAsDataURL(the.input.files[0]);
 

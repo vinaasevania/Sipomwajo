@@ -68,7 +68,7 @@
                         <span class="text-black">Keterangan: {{ $latestStatusSkt->keterangan }}</span>
                         <!--end::Content-->
                     </div>
-                    <a href='{{ url('dashboard-ormas/permohonan-skt/') }}'
+                    <a href='{{ secure_url('dashboard-ormas/permohonan-skt/') }}'
                         class="btn btn-danger font-weight-bold px-4 py-2">Buat Permohonan</a>
                     <!--end::Wrapper-->
                 </div>

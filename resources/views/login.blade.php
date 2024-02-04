@@ -12,10 +12,10 @@
     <meta name="description" content="Login page example" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
-    <link href="{{ asset('assets/css/pages/login/classic/login-1.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
-    {{-- <link href="{{ asset('assets/plugins/global/plugins.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" /> --}}
-    <link href="{{ asset('assets/css/style.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="{{ asset('assets/media/logos/logokesbangpol.png') }}" />
+    <link href="{{ secure_asset('assets/css/pages/login/classic/login-1.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
+    {{-- <link href="{{ secure_asset('assets/plugins/global/plugins.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" /> --}}
+    <link href="{{ secure_asset('assets/css/style.bundle.css?v=7.0.5') }}" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="{{ secure_asset('assets/media/logos/logokesbangpol.png') }}" />
 </head>
 
 <body id="kt_body"
@@ -28,7 +28,7 @@
             id="kt_login">
             <!--begin::Aside-->
             <div class="login-aside d-flex flex-row-auto bgi-size-cover bgi-no-repeat p-10 p-lg-10"
-                style="background-image: url({{ url('assets/media/bg/bg_login1.jpg') }});" loading="lazy">
+                style="background-image: url({{ secure_url('assets/media/bg/bg_login1.jpg') }});" loading="lazy">
                 <!--begin: Aside Container-->
                 <div class="d-flex flex-row-fluid flex-column justify-content-between">
                     <!--begin: Aside header-->
@@ -83,7 +83,7 @@
                             @endforeach
                         @endif
                         <div id="kt_login_signin_form">
-                            <form action="{{ url('/login') }}" method="POST" class="form">
+                            <form action="{{ secure_url('/login') }}" method="POST" class="form">
                                 @csrf
                                 <div class="form-group">
                                     <input class="form-control form-control-solid h-auto py-5 px-6" type="text"
@@ -112,7 +112,7 @@
                         </div>
                         <!--begin::Form-->
                         <div id="kt_login_signup_form">
-                            <form class="form" action="{{ url('/regis') }}" method="POST">
+                            <form class="form" action="{{ secure_url('/regis') }}" method="POST">
                                 @csrf
                                 <div class="form-group">
                                     <input class="form-control form-control-solid h-auto py-3 px-4" type="text"
@@ -252,11 +252,11 @@
     </script>
     <!--end::Global Config-->
     <!--begin::Global Theme Bundle(used by all pages)-->
-    <script src="{{ asset('assets/plugins/global/plugins.bundle.js?v=7.0.5') }}"></script>
-    <script src="{{ asset('assets/js/scripts.bundle.js?v=7.0.5') }}"></script>
+    <script src="{{ secure_asset('assets/plugins/global/plugins.bundle.js?v=7.0.5') }}"></script>
+    <script src="{{ secure_asset('assets/js/scripts.bundle.js?v=7.0.5') }}"></script>
     <!--end::Global Theme Bundle-->
     <!--begin::Page Scripts(used by this page)-->
-    <script src="{{ asset('assets/js/pages/custom/login/login-general.js?v=7.0.5') }}"></script>
+    <script src="{{ secure_asset('assets/js/pages/custom/login/login-general.js?v=7.0.5') }}"></script>
     <!--end::Page Scripts-->
 </body>
 <!--end::Body-->
