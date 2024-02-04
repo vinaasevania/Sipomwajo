@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\PermohonanDana;
 use Illuminate\Http\Request;
 use RealRashid\SweetAlert\Facades\Alert;
+use JD\Cloudder\Facades\Cloudder;
 
 class AdminPermohonanDana extends Controller
 {
@@ -20,11 +21,14 @@ class AdminPermohonanDana extends Controller
 
         // Simpan file SP2P
         $fileSp2p = $request->file('file_sp2p');
-        $fileName = time() . '_' . $fileSp2p->getClientOriginalName();
-        $fileSp2p->storeAs('public/sp2p', $fileName);
+        Cloudder::upload($fileSp2p->getRealPath(), null, [
+            'folder' => "sp2p",
+        ]);
+        $fileSp2p_res = Cloudder::resource(Cloudder::getPublicId());
+        $fileSp2p_res = $fileSp2p_res['url'];
 
         // Update data SP2P
-        $sp2p->file_sp2p = $fileName;
+        $sp2p->file_sp2p = $fileSp2p_res;
         $sp2p->keterangan = $request->keterangan;
         $sp2p->status = 'Berhasil Kirim SP2P';
         $sp2p->save();

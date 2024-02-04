@@ -6,7 +6,9 @@
 <head>
     <base href="../../../../">
     <meta charset="utf-8" />
-    <title>SipomWajo | Login </title>
+
+    <title>Sipomwajo | Login </title>
+
     <meta name="description" content="Login page example" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
@@ -37,7 +39,9 @@
                     <!--begin: Aside content-->
                     <div class="flex-column-fluid d-flex flex-column justify-content-center">
                         <h6 class="font-weight-lighter text-white opacity-80 pb-2">Selamat Datang</h6>
+
                         <h3 class="font-size-h1 mb-5 text-white">Sistem Pelayanan Ormas <br>Kabupaten Wajo</h3>
+
                     </div>
                     <!--end: Aside content-->
                     <!--begin: Aside footer for desktop-->
@@ -175,6 +179,10 @@
                     <!--end::Signup-->
                 </div>
                 <!--end::Content body-->
+
+                <!--begin::Content footer for mobile-->
+                <!--end::Content footer for mobile-->
+
             </div>
             <!--end::Content-->
         </div>

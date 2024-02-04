@@ -13,7 +13,9 @@ class AdminController extends Controller
 {
     public function dashboard()
     {
-        $totalOrmas = SKT::where('status', 'Berhasil Kirim SKT')->count();
+
+        $totalOrmas = SKT::where('status', 'Berhasil Kirim SKT')
+            ->orWhere('status', 'Berhasil Verifikasi')->count();
 
         // Mengelompokkan data berdasarkan tahun dan menghitung total ormas untuk setiap tahun
         $totalOrmasByYear = SKT::where('status', 'Berhasil Kirim SKT')->orWhere('status', 'Berhasil Verifikasi')
