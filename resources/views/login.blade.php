@@ -96,7 +96,7 @@
                                 <!--begin::Action-->
                                 <div class="form-group d-flex flex-wrap justify-content-between align-items-center">
                                     <button type="submit"
-                                        class="btn btn-primary font-weight-bold px-9 py-4 my-3">LOGIN</button>
+                                        class="btn btn-black font-weight-bold px-9 py-4 my-3">LOGIN</button>
                                 </div>
                                 <!--end::Action-->
                             </form>
