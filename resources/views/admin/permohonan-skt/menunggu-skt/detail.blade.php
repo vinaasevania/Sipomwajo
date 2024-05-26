@@ -21,7 +21,7 @@
                     <input class="form-control" disabled="disabled" value="{{ $menunggu->ormas->nama_organisasi }}" />
                 </div>
                 <div class="form-group">
-                    <label>File SP2P</label>
+                    <label>File SKT</label>
                     <div></div>
                     <div class="custom-file">
                         <input type="file" name="skt" class="custom-file-input" accept=".pdf" required
