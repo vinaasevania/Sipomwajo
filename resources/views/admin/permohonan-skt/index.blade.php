@@ -15,7 +15,7 @@
                     <!--begin::Heading-->
                     <div class="d-flex flex-column">
                         <!--begin::Title-->
-                        <h2 class="text-white font-weight-bold my-2 mr-5">Permohonan SKT</h2>
+                        <h2 class="text-white font-weight-bold my-2 mr-5">Permohonan Surat Keterangan Terdaftar</h2>
                         <!--end::Title-->
                         <!--begin::Breadcrumb-->
                         <div class="d-flex align-items-center font-weight-bold my-2">
