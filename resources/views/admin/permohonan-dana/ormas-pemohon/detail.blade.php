@@ -52,12 +52,12 @@
                                                 @if ($ormasPemohon->status == 'Berhasil Kirim SP2P')
                                                     <h6 class="font-weight-bolder text-primary"
                                                         style="background-color: #EEFBF0; padding:6px 10px; border-radius:6px;">
-                                                        Terima SP2P
+                                                        Terima T2D
                                                     </h6>
                                                 @else
                                                     <h6 class="font-weight-bolder text-warning"
                                                         style="background-color: #fbfbee; padding:6px 10px; border-radius:6px;">
-                                                        Menunggu SP2P
+                                                        Menunggu T2D
                                                     </h6>
                                                 @endif
                                             </div>
