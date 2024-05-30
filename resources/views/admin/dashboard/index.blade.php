@@ -143,6 +143,22 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-6">
+                        <!--begin::List Widget 11-->
+                        <div class="card card-custom card-stretch gutter-b" style="height: 60vh;">
+                            <!--begin::Header-->
+                            <div class="card-header border-0">
+                                <h3 class="card-title font-weight-bolder text-dark">Total Ormas</h3>
+                            </div>
+                            <!--end::Header-->
+                            <!--begin::Body-->
+                            <div class="card-body pt-0">
+                                <canvas style="width: 100%;" id="jumlahOrmas"></canvas>
+                            </div>
+                            <!--end::Body-->
+                        </div>
+                        <!--end::List Widget 11-->
+                    </div>
+                    <div class="col-lg-6">
                         <!--begin::List Widget 10-->
                         <div class="card card-custom card-stretch gutter-b" style="height: 60vh;">
                             <!--begin::Header-->
@@ -161,22 +177,6 @@
                         </div>
                         <!--end: Card-->
                         <!--end: List Widget 10-->
-                    </div>
-                    <div class="col-lg-6">
-                        <!--begin::List Widget 11-->
-                        <div class="card card-custom card-stretch gutter-b" style="height: 60vh;">
-                            <!--begin::Header-->
-                            <div class="card-header border-0">
-                                <h3 class="card-title font-weight-bolder text-dark">Total Ormas</h3>
-                            </div>
-                            <!--end::Header-->
-                            <!--begin::Body-->
-                            <div class="card-body pt-0">
-                                <canvas style="width: 100%;" id="jumlahOrmas"></canvas>
-                            </div>
-                            <!--end::Body-->
-                        </div>
-                        <!--end::List Widget 11-->
                     </div>
                 </div>
             </div>
